@@ -14,7 +14,7 @@ const createDate = (dates, index) => {
     dateParsed.push((Date.parse(item)/1000).toString())
   })
   
-  return (index) ? dateParsed[index] : dateParsed.sort().join("-")
+  return (typeof(index) == 'number') ? dateParsed[index] : dateParsed.sort().join("-")
 };
 
 // ! JANGAN DIMODIFIKASI
