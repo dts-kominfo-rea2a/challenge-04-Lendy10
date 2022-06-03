@@ -8,7 +8,7 @@ const dates = [
 ];
 
 // TODO: Buatlah fungsi createDate
-const createDate = (dates, index = null) => {
+const createDate = (dates, index) => {
   const dateParsed = []
   dates.forEach(item => {
     dateParsed.push(Date.parse(item)/1000)
@@ -26,7 +26,6 @@ const createDate = (dates, index = null) => {
 
   // '1614841200' (dalam string)
   console.log(createDate?.(dates, 2));
-
 })();
 
 module.exports = {
