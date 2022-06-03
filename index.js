@@ -11,7 +11,7 @@ const dates = [
 const createDate = (dates, index = null) => {
   const dateParsed = []
   dates.forEach(item => {
-    dateParsed.push(Date.parse(item)/100)
+    dateParsed.push(Date.parse(item)/1000)
   })
   
   return (index) ? dateParsed[index] : dateParsed.sort().join("-")
